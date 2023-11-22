@@ -1,2 +1,13 @@
 <h1> Hello, world! </h1>
-<blink> This is my first attempt to deploy a website to Render</blink>
+<div class="blink_me">This is my first attempt to deploy a website to Render</div>
+
+<--! https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3 -->
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
